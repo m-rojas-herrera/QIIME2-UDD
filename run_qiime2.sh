@@ -11,7 +11,6 @@
 #$ -cwd
 #Merge the standard out and standard error to one file
 #$ -j y
-/bin/echo Here I am: `hostname`. Sleeping now at: `date`
 /bin/echo Running on host: `hostname`.
 /bin/echo In directory: `pwd`
 /bin/echo Starting on: `date`
