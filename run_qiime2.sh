@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Usage: qsub -q cpu.q run_qiime2.sh [time]]
+# Usage: qsub -q cpu.q run_qiime2.sh
 #       
 
 # -- our name ---
