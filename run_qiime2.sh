@@ -142,6 +142,12 @@ qiime taxa barplot \
   --i-taxonomy taxonomy.qza \
   --m-metadata-file metadata.txt \
   --o-visualization taxa-bar-plots.qzv
+  
+  qiime composition add-pseudocount --i-table table-dada2.qza --o-composition-table comp-table-dada2.qza
+  qiime composition ancom --i-table comp-table-dada2.qza --m-metadata-file new_metadata.txt --m-metadata-category baseline_MDRO --o-visualization ancom-baseline_MDRO.qzv
+  qiime composition ancom --i-table comp-table-dada2.qza --m-metadata-file new_metadata.txt --m-metadata-category AB --o-visualization ancom-AB.qzv
+  
+  
 
 /bin/echo Ending on: `date`
 
